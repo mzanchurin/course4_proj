@@ -48,7 +48,8 @@ class Dev(Configuration):# Build paths inside the project like this: BASE_DIR / 
         'django.contrib.messages',
         'django.contrib.staticfiles',
         'movies',
-        "gh"
+        "gh",
+        "django_celery_results"
     ]
 
     MIDDLEWARE = [
@@ -157,3 +158,5 @@ class Dev(Configuration):# Build paths inside the project like this: BASE_DIR / 
             "level": "DEBUG",
         },
     }
+    CELERY_RESULT_BACKEND = "django-db"
+    CELERY_BROKER_URL = "redis://localhost:6379/0"
