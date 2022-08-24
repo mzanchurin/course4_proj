@@ -47,7 +47,8 @@ class Dev(Configuration):# Build paths inside the project like this: BASE_DIR / 
         'django.contrib.sessions',
         'django.contrib.messages',
         'django.contrib.staticfiles',
-        'movies'
+        'movies',
+        "gh"
     ]
 
     MIDDLEWARE = [
