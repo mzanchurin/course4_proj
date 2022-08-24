@@ -49,7 +49,8 @@ class Dev(Configuration):# Build paths inside the project like this: BASE_DIR / 
         'django.contrib.staticfiles',
         'movies',
         "gh",
-        "django_celery_results"
+        "django_celery_results",
+        "django_celery_beat"
     ]
 
     MIDDLEWARE = [
